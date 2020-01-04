@@ -36,5 +36,8 @@ public:
 	//프로젝타일의 속도를 발사 방향으로 초기화
 	void FireInDirection(const FVector& ShootDirection);
 
+	UFUNCTION()
+		void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
+
 	
 };
